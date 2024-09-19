@@ -16,7 +16,6 @@ class Renderer {
   }
 
   update(parent, child) {
-    console.log(parent);
     if (typeof child === "function") {
       parent.innerHTML = child();
     } else {

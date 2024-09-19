@@ -1,4 +1,5 @@
-import { Router } from "../../framework/router.js";
+import { Router } from "../../../framework/router.js";
+import ButtonComponent from "../ui/button.js";
 
 function HeaderComponent() {
   const router = new Router();
@@ -21,9 +22,18 @@ function HeaderComponent() {
   // Create the HTML template using a template literal
   const template = `
     <nav>
-      <button id="homeButton">Home</button>
-      <button id="aboutButton">About</button>
-      <button id="contactButton">Contact</button>
+      ${ButtonComponent({
+        id: "homeButton",
+        label: "Home"
+      })}
+      ${ButtonComponent({
+        id: "aboutButton",
+        label: "About"
+      })}
+      ${ButtonComponent({
+        id: "contactButton",
+        label: "Contact"
+      })}
     </nav>
   `;
 

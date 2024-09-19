@@ -1,7 +1,7 @@
 import { Renderer } from "../framework/renderer.js";
 import { BrowserRouter, Router } from "../framework/router.js";
-import FooterComponent from "./components/footer.js";
-import HeaderComponent from "./components/header.js";
+import FooterComponent from "./components/layouts/footer.js";
+import HeaderComponent from "./components/layouts/header.js";
 import AboutComponent from "./pages/about.js";
 import ContactComponent from "./pages/contact.js";
 import EmailComponent from "./pages/contact/email.js";
